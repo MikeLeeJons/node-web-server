@@ -48,6 +48,11 @@ app.get('/about', (req, res) => {
     pageTitle: 'About Page'
   })
 })
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Portfolio'
+  })
+})
 
 app.get('/bad', (req, res) => {
   res.send({
